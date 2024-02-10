@@ -1,0 +1,84 @@
+.container {
+  border-radius: 10px;
+  background: rgb(232, 235, 242);
+  width: 272px;
+  height: 258px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 47px;
+  grid-area: right;
+}
+.title {
+  color: rgb(78, 20, 140);
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 29px;
+  margin-left: 19px;
+}
+.company {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 21px;
+  margin-left: 42px;
+}
+.radio {
+  width: 21px;
+  height: 21px;
+  cursor: pointer;
+
+  border: 1px solid rgb(78, 20, 140);
+  border-radius: 4px;
+  background-color: transparent;
+}
+.radio.active {
+  background-image: url(../../img/check.png);
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: center;
+}
+
+.text {
+  color: rgb(133, 138, 227);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-left: 19px;
+}
+@media screen and (max-width: 1060px) {
+  .container {
+    background: rgb(78, 20, 140);
+    margin-top: 0;
+  }
+  .title {
+    color: rgb(247, 249, 247);
+  }
+  .radio {
+    border: 1px solid rgb(247, 249, 247);
+  }
+  .radio.active {
+    background-image: url(../../img/checkWhite.png);
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .title {
+    font-size: 14px;
+  }
+  .text {
+    font-size: 12px;
+  }
+  .company {
+    margin-left: 25px;
+  }
+}

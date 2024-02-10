@@ -1,0 +1,42 @@
+.header {
+  max-width: 1050px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 84px;
+  margin-top: 15px;
+}
+.img {
+  width: 100px;
+  height: 80.45px;
+}
+.text {
+  color: rgb(78, 20, 140);
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  text-align: left;
+}
+@media screen and (max-width: 1060px) {
+  .header {
+    width: 695px;
+    justify-content: center;
+  }
+  .img {
+    width: 57px;
+    height: 46px;
+  }
+  .text {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    width: 95%;
+  }
+  .img {
+    width: 68px;
+    height: 54px;
+  }
+}

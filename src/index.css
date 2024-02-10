@@ -1,0 +1,17 @@
+#root {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+button {
+  cursor: pointer;
+}
+@media screen and (max-width: 1060px) {
+  #root {
+    max-width: 695px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #root {
+    width: 95%;
+  }
+}

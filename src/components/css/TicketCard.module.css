@@ -1,0 +1,139 @@
+.container {
+  display: grid;
+  grid-template-rows: 3fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "price . logo"
+    "text1 text2 text3"
+    "textBold1 textBold2 textBold3";
+  gap: 10px;
+  width: 650px;
+  height: auto;
+  border-radius: 10px;
+  background: rgb(232, 235, 242);
+  padding: 38px 43px 25px 39px;
+
+  margin-bottom: 47px;
+  margin-left: 50px;
+}
+
+.price {
+  grid-area: price;
+  color: rgb(78, 20, 140);
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+  text-align: left;
+}
+
+.logo {
+  grid-area: logo;
+  width: auto;
+  height: auto;
+}
+
+.text1 {
+  grid-area: text1;
+  color: rgb(133, 138, 227);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  text-align: left;
+}
+
+.text2 {
+  grid-area: text2;
+  color: rgb(133, 138, 227);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  text-align: left;
+}
+
+.text3 {
+  grid-area: text3;
+  color: rgb(133, 138, 227);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  text-align: left;
+  margin-left: 14px;
+}
+
+.textBold1 {
+  grid-area: textBold1;
+  color: rgb(78, 20, 140);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  text-align: left;
+}
+
+.textBold2 {
+  grid-area: textBold2;
+  color: rgb(78, 20, 140);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  text-align: left;
+}
+
+.textBold3 {
+  grid-area: textBold3;
+  color: rgb(78, 20, 140);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  text-align: left;
+  margin-left: 14px;
+}
+@media screen and (max-width: 1060px) {
+  .container {
+    width: 560px;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 92%;
+    padding: 15px;
+    margin-top: 15px;
+    grid-template-rows: 2fr 0.5fr 0.5fr;
+  }
+  .textBold1 {
+    font-size: 14px;
+  }
+  .textBold2 {
+    font-size: 14px;
+    width: 150%;
+  }
+  .textBold3 {
+    font-size: 14px;
+    margin-left: 55px;
+  }
+  .text1 {
+    font-size: 12px;
+  }
+  .text2 {
+    font-size: 12px;
+    width: 150%;
+  }
+  .text3 {
+    font-size: 12px;
+    margin-left: 55px;
+  }
+  .price {
+    width: 150%;
+  }
+  .logo {
+    position: relative;
+    left: -15px;
+  }
+}

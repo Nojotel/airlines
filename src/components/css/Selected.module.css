@@ -1,0 +1,79 @@
+.container {
+  margin-top: 47px;
+  margin-left: 50px;
+  margin-bottom: 29px;
+}
+
+.button1 {
+  width: 242px;
+  height: 55px;
+  border: 1px solid rgb(78, 20, 140);
+  border-radius: 10px 0px 0px 10px;
+  background: rgb(232, 235, 242);
+}
+
+.button2 {
+  width: 243px;
+  height: 55px;
+  border: 1px solid rgb(78, 20, 140);
+  background: rgb(232, 235, 242);
+}
+
+.button3 {
+  width: 242px;
+  height: 55px;
+  border: 1px solid rgb(78, 20, 140);
+  border-radius: 0px 10px 10px 0px;
+  background: rgb(232, 235, 242);
+}
+
+.text {
+  color: rgb(78, 20, 140);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  text-align: center;
+}
+.active {
+  background: rgb(78, 20, 140);
+  color: rgb(247, 249, 247);
+}
+.active .text {
+  color: rgb(247, 249, 247);
+}
+@media screen and (max-width: 1060px) {
+  .container {
+    margin-left: 0;
+  }
+  .button1 {
+    width: 214px;
+  }
+  .button2 {
+    width: 214px;
+  }
+  .button3 {
+    width: 214px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  .button1 {
+    width: 31%;
+  }
+  .button2 {
+    width: 31%;
+  }
+  .button3 {
+    width: 31%;
+  }
+  .text {
+    font-size: 12px;
+  }
+}
